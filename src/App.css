@@ -99,6 +99,8 @@ p {
   position: relative;
   padding: 10px;
   border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.5);
+  box-shadow: 2px 2px 15px rgba(0, 0, 0, .5);
 }
 .colorButton {
   display: flex;
@@ -123,7 +125,7 @@ p {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  backdrop-filter: blur(1px)
+  backdrop-filter: blur(1px);
 }
 
 

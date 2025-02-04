@@ -126,8 +126,10 @@ function App() {
 
         {/* scores, trial */}
         <div style={{ display: "flex", flexDirection: "row", gap: "10px" }}>
+          {/* trials/chances */}
           <p style={{ fontWeight: "600" }}>Trial(s): {count}</p>
 
+          {/* bst, correct, wrong */}
           <div
             style={{
               display: "flex",
@@ -138,14 +140,16 @@ function App() {
               flex: 1,
             }}
           >
+            {/* best score */}
             <p style={{ fontWeight: "600", fontSize: "1em" }}>Best: {best} </p>
+            {/* correct guess */}
             <p
               data-testid="score"
               style={{ fontWeight: "600", fontSize: "1em", color: "green" }}
             >
               correct: {correct}
             </p>
-
+            {/* wrong guess */}
             <p style={{ fontWeight: "600", fontSize: "1em", color: "red" }}>
               wrong: {wrong}
             </p>
@@ -185,9 +189,7 @@ function App() {
         </div>
 
         {/* indicator /correct/wrong */}
-        <div
-          style={{ position: "relative", padding: 10 }}
-        >
+        <div style={{ position: "relative", padding: 10 }}>
           <div
             style={{
               position: "absolute",
@@ -195,7 +197,6 @@ function App() {
               display: "flex",
               alignItems: "center",
               justifyContent: "center",
-              
             }}
           >
             <p data-testid="gameStatus" style={{ fontSize: "1.2em" }}>
